@@ -1,12 +1,12 @@
 require('dotenv').config();
 
 const express = require ("express");
-
+const cors = require('cors'); //cors
 const app = express ();
 
 //body parsing middleware
 app.use[express.json()];
-
+app.use[cors('*')];
 
 let todos = [
 { "id": 1, task: 'Learn Node.js', completed: false},
